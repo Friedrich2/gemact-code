@@ -343,14 +343,14 @@ def assert_type_value(value, name, logger, type=(int, float), upper_bound=None, 
     if upper_bound is not None:
         if upper_close:
             try:
-                message = 'Make sure %s is lower than or equal to %r.' % (name, lower_bound)
-                assert value <= lower_bound, logger.error(message)
+                message = 'Make sure %s is lower than or equal to %r.' % (name, upper_bound)
+                assert value <= upper_bound, logger.error(message)
             except AssertionError as msg:
                 print(msg)
         else:
             try:
-                message = 'Make sure %s is lower than %r.' % (name, lower_bound)
-                assert value < lower_bound, logger.error(message)
+                message = 'Make sure %s is lower than %r.' % (name, upper_bound)
+                assert value < upper_bound, logger.error(message)
             except AssertionError as msg:
                 print(msg)
 
