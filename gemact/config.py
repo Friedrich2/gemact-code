@@ -7,6 +7,8 @@ SEV_DISCRETIZATION_METHOD = {'massdispersal', 'localmoments'}  # imported in los
 AGGREGATE_LOSS_APPROX_METHOD = {'fft', 'recursion', 'mc'}  # imported in lossmodel
 POLICY_LAYER_BASIS = {'regular', 'drop-down', 'stretch-down'} # imported in lossmodel
 RESERVING_METHOD = {'fisher_lange', 'crm'} # imported in lossreserve
+DEDUCTIBLE_TYPE = {'non-ranking eel', 'eel'}
+
 # dictionary of copulas
 COP_DICT = {
     'clayton': 'copulas.ClaytonCopula',
